@@ -34,14 +34,9 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 Astéroïde / GravityZone
 
-│Calcul Newtonian: G \* M1 \* M2 / d²|
-|:-----------------------------------:|
-|▼|
-|┌───────────────┬───────────────────────────────┐|
-|\||\||\||
-|▼               ▼                               ▼|
-|[Rigid Body][CharacterMovement][Modular Interface]|
-|Add Force][Add Force - Flying][BPI\_Interactable|
+Calcul Newtonian: $G \* M1 \* M2 / d²$
+[Rigid Body] x [CharacterMovement] x [Modular Interface]
+[Add Force] x [Add Force - Flying] x [BPI\_Interactable]
 
 
 ---
