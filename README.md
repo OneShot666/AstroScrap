@@ -1,7 +1,5 @@
 # AstroScrap — Technical Design Document & Prototype
 
-
-
 ![Unreal Engine 5.8](https://img.shields.io/badge/Unreal%20Engine-5.8-orange?logo=unrealengine)
 
 ![Physics](https://img.shields.io/badge/Physics-Newtonian%20Zero--G-blue)
@@ -9,17 +7,13 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 
-
 A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engine 5. Players navigate asteroid fields using Newtonian orbital mechanics, extract resources, and manipulate debris using a modular interaction system.
-
 
 
 ---
 
 
-
 ## Key Features
-
 
 
 - **Newtonian Gravity Zone:** Celestial bodies exert radial gravitational acceleration calculated in real time using $F = \\frac{G \\cdot M\_1 \\cdot M\_2}{d^2}$.
@@ -33,57 +27,43 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 - **Real-Time Telemetry \& Visual Debug:** In-game telemetry printing force vectors, targeting line-traces, and gravity zone entry/exit logs.
 
 
-
 ---
-
 
 
 ## System Architecture
 
-| Astéroïde / GravityZone |
-│ Calcul Newtonian: G \* M1 \* M2 / d² |
-| -----------------:-------------------|
-| ▼ |
+Astéroïde / GravityZone
+
+│Calcul Newtonian: G \* M1 \* M2 / d²|
+|:-----------------------------------:|
+|▼|
 |┌───────────────┬───────────────────────────────┐|
 |\│|\│|\│|
 |▼|▼|▼|
-| Rigid Body | CharacterMovement | Modular Interface |
-| Add Force | Add Force - Flying | BPI\_Interactable |
-
+|Rigid Body|CharacterMovement|Modular Interface|
+|Add Force|Add Force - Flying|BPI\_Interactable|
 
 
 ---
-
 
 
 ## Technical Specifications \& Settings
 
 
-
-| Parameter | Value / Mode | Notes |
-
+| Parameter | Value / Mode |
 | :--- | :--- | :--- |
-
 | **Movement Mode** | `Flying` | Prevents standard walking floor checks and friction |
-
 | **Gravity Scale** | `0.0` | Bypasses UE5 global downward gravity |
-
 | **Gravitational Scale ($G$)** | `980.0` | Gameplay-aligned scale factor (cm/s²) |
-
 | **Max Force Clamp** | `100,000.0` | Prevents infinity division when distance $d \\to 0$ |
-
 | **Braking Deceleration** | `0.0` | Pure zero-friction inertia (compensated by Jetpack) |
-
 | **Interaction System** | `BPI\_Interactable` | Interface-based detection via `LineTraceByChannel` |
-
 
 
 ---
 
 
-
 ## Project Setup & Installation
-
 
 
 ### Prerequisites
