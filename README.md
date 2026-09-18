@@ -40,17 +40,15 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 ## System Architecture
 
-[ Astéroïde / GravityZone ]
-
-│  (Calcul Newtonian: G \* M1 \* M2 / d²)
-
-▼
-┌───────────────┬───────────────────────────────┐
-│               │                               │
-▼               ▼                               ▼
-[ Rigid Body ] [ CharacterMovement ]  [ Modular Interface ]
-
-(Add Force)    (Add Force - Flying)   (BPI\_Interactable)
+| Astéroïde / GravityZone |
+│ Calcul Newtonian: G \* M1 \* M2 / d² |
+| -----------------:-------------------|
+| ▼ |
+|┌───────────────┬───────────────────────────────┐|
+|\│|\│|\│|
+|▼|▼|▼|
+| Rigid Body | CharacterMovement | Modular Interface |
+| Add Force | Add Force - Flying | BPI\_Interactable |
 
 
 
@@ -98,7 +96,7 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 ### Clones & Execution
 
-1. Clone the repository: ```bash git clone [https://github.com/OneShot666/AstroScrap.git](https://github.com/OneShot666/AstroScrap.git)
+1. Clone the repository: ```bash git clone [https://github.com/OneShot666/AstroScrap.git](https://github.com/OneShot666/AstroScrap.git)```
 
 
 
@@ -113,8 +111,8 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 ## Controls
 
 
-| Action Control | (Keyboard / Mouse) |
-|:---------------|:-------------------|
+| Action Control | Keyboard / Mouse |
+|:---------------|:-----------------|
 | Move / Pitch / Yaw | W, A, S, D / Mouse Movement |
 | Ascend / Descend | Space / C (Flying Mode) |
 | Interact / Grab Object | E |
