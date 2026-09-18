@@ -16,7 +16,8 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 ## Key Features
 
 
-- **Newtonian Gravity Zone:** Celestial bodies exert radial gravitational acceleration calculated in real time using $F = \\frac{G \\cdot M\_1 \\cdot M\_2}{d^2}$.
+- **Newtonian Gravity Zone:** Celestial bodies exert radial gravitational acceleration calculated in real time using 
+$F = \\frac{G \\cdot M\_1 \\cdot M\_2}{d^2}$.
 
 - **Zero-G Inertial Movement:** Custom character mobility built on `CharacterMovementComponent` in `Flying` mode (Gravity Scale = 0) with configurable deceleration.
 
@@ -34,9 +35,11 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 Astéroïde / GravityZone
 
-Calcul Newtonian: $G \* M1 \* M2 / d²$
-[Rigid Body] x [CharacterMovement] x [Modular Interface]
-[Add Force] x [Add Force - Flying] x [BPI\_Interactable]
+Calcul Newtonian: $frac{ G \* M1 \* M2 }{ d² }$
+
+- Rigid Body : Add Force
+- CharacterMovement : Add Force - Flying
+- Modular Interface : Interactable
 
 
 ---
