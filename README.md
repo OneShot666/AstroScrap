@@ -1,12 +1,12 @@
-\# AstroScrap — Technical Design Document \& Prototype
+# AstroScrap — Technical Design Document \& Prototype
 
 
 
-!\[Unreal Engine 5.8](https://img.shields.io/badge/Unreal%20Engine-5.8-orange?logo=unrealengine)
+![Unreal Engine 5.8](https://img.shields.io/badge/Unreal%20Engine-5.8-orange?logo=unrealengine)
 
-!\[Physics](https://img.shields.io/badge/Physics-Newtonian%20Zero--G-blue)
+![Physics](https://img.shields.io/badge/Physics-Newtonian%20Zero--G-blue)
 
-!\[License](https://img.shields.io/badge/License-MIT-green)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 
 
@@ -14,11 +14,11 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 
 
-\---
+---
 
 
 
-\## Key Features
+## Key Features
 
 
 
@@ -34,13 +34,13 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 
 
-\---
+---
 
 
 
-\## System Architecture
+## System Architecture
 
-\[ Astéroïde / GravityZone ]
+[ Astéroïde / GravityZone ]
 
 │  (Calcul Newtonian: G \* M1 \* M2 / d²)
 
@@ -52,17 +52,17 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 ▼               ▼                               ▼
 
-\[ Rigid Body ] \[ CharacterMovement ]  \[ Modular Interface ]
+[ Rigid Body ] \[ CharacterMovement ]  \[ Modular Interface ]
 
 (Add Force)    (Add Force - Flying)   (BPI\_Interactable)
 
 
 
-\---
+---
 
 
 
-\## Technical Specifications \& Settings
+## Technical Specifications \& Settings
 
 
 
@@ -84,29 +84,29 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 
 
-\---
+---
 
 
 
-\## Project Setup \& Installation
+## Project Setup \& Installation
 
 
 
-\### Prerequisites
+### Prerequisites
 
-\- Unreal Engine 5.8 or higher
+- Unreal Engine 5.8 or higher
 
-\- Git LFS (Large File Storage enabled)
+- Git LFS (Large File Storage enabled)
 
 
 
-\### Clones \& Execution
+### Clones \& Execution
 
-1\. Clone the repository:
+1. Clone the repository:
 
 &#x20;  ```bash
 
-&#x20;  git clone \[https://github.com/YourUsername/AstroScrap.git](https://github.com/YourUsername/AstroScrap.git)
+&#x20;  git clone [https://github.com/YourUsername/AstroScrap.git](https://github.com/YourUsername/AstroScrap.git)
 
 
 
@@ -118,8 +118,7 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 ---
 
 
-
-\## Controls
+## Controls
 
 
 Action Control (Keyboard / Mouse)
@@ -130,23 +129,23 @@ Charge ThrowHold Left Mouse Button
 Release / ThrowRelease Left Mouse Button
 
 
-\---
+---
 
 
 ## Development Roadmap
 
 
-\[x] Newtonian gravity calculation \& stability optimization
-\[x] Zero-G player movement configuration (Flying mode)
-\[x] Interface-driven BPI\_Interactable Grab \& Throw system
-\[x] Radial HUD charging gauge \& diagnostic telemetry
-\[ ] Manual BPC\_Jetpack component for directional thrust
-\[ ] Survival indicators (Oxygen $O\_2$, Power, Health)
-\[ ] Chaos Physics integration for destructible asteroids
-\[ ] Modular station building \& scrap recycling
+[x] Newtonian gravity calculation \& stability optimization
+[x] Zero-G player movement configuration (Flying mode)
+[x] Interface-driven BPI\_Interactable Grab \& Throw system
+[x] Radial HUD charging gauge \& diagnostic telemetry
+[ ] Manual BPC\_Jetpack component for directional thrust
+[ ] Survival indicators (Oxygen $O\_2$, Power, Health)
+[ ] Chaos Physics integration for destructible asteroids
+[ ] Modular station building \& scrap recycling
 
 
-\---
+---
 
 
 ## License
