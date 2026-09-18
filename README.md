@@ -33,13 +33,11 @@ $F = \\frac{G \\cdot M\_1 \\cdot M\_2}{d^2}$.
 
 ## System Architecture
 
-Astéroïde / GravityZone
-
-Calcul Newtonian: $frac{ G \* M1 \* M2 }{ d² }$
-
-- Rigid Body : Add Force
-- CharacterMovement : Add Force - Flying
-- Modular Interface : Interactable
+-- Astéroïde / GravityZone
+-- Calcul Newtonian
+-- Rigid Body : Add Force
+-- CharacterMovement : Add Force - Flying
+-- Modular Interface : Interactable
 
 
 ---
