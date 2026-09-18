@@ -22,15 +22,15 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 
 
-\- \*\*Newtonian Gravity Zone:\*\* Celestial bodies exert radial gravitational acceleration calculated in real time using $F = \\frac{G \\cdot M\_1 \\cdot M\_2}{d^2}$.
+- **Newtonian Gravity Zone:** Celestial bodies exert radial gravitational acceleration calculated in real time using $F = \\frac{G \\cdot M\_1 \\cdot M\_2}{d^2}$.
 
-\- \*\*Zero-G Inertial Movement:\*\* Custom character mobility built on `CharacterMovementComponent` in `Flying` mode (Gravity Scale = 0) with configurable deceleration.
+- **Zero-G Inertial Movement:** Custom character mobility built on `CharacterMovementComponent` in `Flying` mode (Gravity Scale = 0) with configurable deceleration.
 
-\- \*\*Modular Interaction Interface (`BPI\_Interactable`):\*\* Interface-driven Grab, Hold, and Throw mechanics avoiding tight class coupling.
+- **Modular Interaction Interface (`BPI\_Interactable`):** Interface-driven Grab, Hold, and Throw mechanics avoiding tight class coupling.
 
-\- \*\*Charged Throw \& Dynamic HUD Gauge:\*\* Variable impulse power system tied to an arc-filling radial UI gauge.
+- **Charged Throw \& Dynamic HUD Gauge:** Variable impulse power system tied to an arc-filling radial UI gauge.
 
-\- \*\*Real-Time Telemetry \& Visual Debug:\*\* In-game telemetry printing force vectors, targeting line-traces, and gravity zone entry/exit logs.
+- **Real-Time Telemetry \& Visual Debug:** In-game telemetry printing force vectors, targeting line-traces, and gravity zone entry/exit logs.
 
 
 
@@ -70,17 +70,17 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 | :--- | :--- | :--- |
 
-| \*\*Movement Mode\*\* | `Flying` | Prevents standard walking floor checks and friction |
+| **Movement Mode** | `Flying` | Prevents standard walking floor checks and friction |
 
-| \*\*Gravity Scale\*\* | `0.0` | Bypasses UE5 global downward gravity |
+| **Gravity Scale** | `0.0` | Bypasses UE5 global downward gravity |
 
-| \*\*Gravitational Scale ($G$)\*\* | `980.0` | Gameplay-aligned scale factor (cm/s²) |
+| **Gravitational Scale ($G$)** | `980.0` | Gameplay-aligned scale factor (cm/s²) |
 
-| \*\*Max Force Clamp\*\* | `100,000.0` | Prevents infinity division when distance $d \\to 0$ |
+| **Max Force Clamp** | `100,000.0` | Prevents infinity division when distance $d \\to 0$ |
 
-| \*\*Braking Deceleration\*\* | `0.0` | Pure zero-friction inertia (compensated by Jetpack) |
+| **Braking Deceleration** | `0.0` | Pure zero-friction inertia (compensated by Jetpack) |
 
-| \*\*Interaction System\*\* | `BPI\_Interactable` | Interface-based detection via `LineTraceByChannel` |
+| **Interaction System** | `BPI\_Interactable` | Interface-based detection via `LineTraceByChannel` |
 
 
 
@@ -102,17 +102,13 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 ### Clones \& Execution
 
-1. Clone the repository:
-
-&#x20;  ```bash
-
-&#x20;  git clone [https://github.com/YourUsername/AstroScrap.git](https://github.com/YourUsername/AstroScrap.git)
+1. Clone the repository: ```bash git clone [https://github.com/YourUsername/AstroScrap.git](https://github.com/YourUsername/AstroScrap.git)
 
 
 
 1. Open AstroScrap.uproject in Unreal Engine 5.8.
-2. 2\. Build C++ source files if prompted.
-3. 3\. Press Play in the main level (Content/Maps/Main\_Sandbox).
+2. Build C++ source files if prompted.
+3. Press Play in the main level (Content/Maps/Main\_Sandbox).
 
 
 ---
@@ -136,12 +132,19 @@ Release / ThrowRelease Left Mouse Button
 
 
 [x] Newtonian gravity calculation \& stability optimization
+
 [x] Zero-G player movement configuration (Flying mode)
+
 [x] Interface-driven BPI\_Interactable Grab \& Throw system
+
 [x] Radial HUD charging gauge \& diagnostic telemetry
+
 [ ] Manual BPC\_Jetpack component for directional thrust
+
 [ ] Survival indicators (Oxygen $O\_2$, Power, Health)
+
 [ ] Chaos Physics integration for destructible asteroids
+
 [ ] Modular station building \& scrap recycling
 
 
