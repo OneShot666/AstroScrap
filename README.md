@@ -1,4 +1,4 @@
-# AstroScrap — Technical Design Document \& Prototype
+# AstroScrap — Technical Design Document & Prototype
 
 
 
@@ -45,14 +45,10 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 │  (Calcul Newtonian: G \* M1 \* M2 / d²)
 
 ▼
-
 ┌───────────────┬───────────────────────────────┐
-
 │               │                               │
-
 ▼               ▼                               ▼
-
-[ Rigid Body ] \[ CharacterMovement ]  \[ Modular Interface ]
+[ Rigid Body ] [ CharacterMovement ]  [ Modular Interface ]
 
 (Add Force)    (Add Force - Flying)   (BPI\_Interactable)
 
@@ -88,7 +84,7 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 
 
-## Project Setup \& Installation
+## Project Setup & Installation
 
 
 
@@ -100,9 +96,9 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 
 
 
-### Clones \& Execution
+### Clones & Execution
 
-1. Clone the repository: ```bash git clone [https://github.com/YourUsername/AstroScrap.git](https://github.com/YourUsername/AstroScrap.git)
+1. Clone the repository: ```bash git clone [https://github.com/OneShot666/AstroScrap.git](https://github.com/OneShot666/AstroScrap.git)
 
 
 
@@ -117,12 +113,13 @@ A scalable, physics-based Zero-G sandbox survival game developed in Unreal Engin
 ## Controls
 
 
-Action Control (Keyboard / Mouse)
-Move / Pitch / Yaw W, A, S, D / Mouse Movement
-Ascend / Descend Space / C (Flying Mode)
-Interact / Grab Object E
-Charge ThrowHold Left Mouse Button
-Release / ThrowRelease Left Mouse Button
+| Action Control | (Keyboard / Mouse) |
+|:---------------|:-------------------|
+| Move / Pitch / Yaw | W, A, S, D / Mouse Movement |
+| Ascend / Descend | Space / C (Flying Mode) |
+| Interact / Grab Object | E |
+| Charge Throw | Hold Left Mouse Button |
+| Release / Throw | Release Left Mouse Button |
 
 
 ---
@@ -131,21 +128,21 @@ Release / ThrowRelease Left Mouse Button
 ## Development Roadmap
 
 
-[x] Newtonian gravity calculation \& stability optimization
+- [x] Newtonian gravity calculation \& stability optimization
 
-[x] Zero-G player movement configuration (Flying mode)
+- [x] Zero-G player movement configuration (Flying mode)
 
-[x] Interface-driven BPI\_Interactable Grab \& Throw system
+- [x] Interface-driven BPI\_Interactable Grab \& Throw system
 
-[x] Radial HUD charging gauge \& diagnostic telemetry
+- [x] Radial HUD charging gauge \& diagnostic telemetry
 
-[ ] Manual BPC\_Jetpack component for directional thrust
+- [ ] Manual BPC\_Jetpack component for directional thrust
 
-[ ] Survival indicators (Oxygen $O\_2$, Power, Health)
+- [ ] Survival indicators (Oxygen $O\_2$, Power, Health)
 
-[ ] Chaos Physics integration for destructible asteroids
+- [ ] Chaos Physics integration for destructible asteroids
 
-[ ] Modular station building \& scrap recycling
+- [ ] Modular station building \& scrap recycling
 
 
 ---
@@ -153,5 +150,5 @@ Release / ThrowRelease Left Mouse Button
 
 ## License
 
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
