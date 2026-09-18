@@ -38,10 +38,10 @@ Astéroïde / GravityZone
 |:-----------------------------------:|
 |▼|
 |┌───────────────┬───────────────────────────────┐|
-|\│|\│|\│|
-|▼|▼|▼|
-|Rigid Body|CharacterMovement|Modular Interface|
-|Add Force|Add Force - Flying|BPI\_Interactable|
+|\||\||\||
+|▼               ▼                               ▼|
+|[Rigid Body][CharacterMovement][Modular Interface]|
+|Add Force][Add Force - Flying][BPI\_Interactable|
 
 
 ---
@@ -50,8 +50,8 @@ Astéroïde / GravityZone
 ## Technical Specifications \& Settings
 
 
-| Parameter | Value / Mode |
-| :--- | :--- | :--- |
+| Parameter | Value / Mode | Notes |
+| :-------- | :----------- | :---- |
 | **Movement Mode** | `Flying` | Prevents standard walking floor checks and friction |
 | **Gravity Scale** | `0.0` | Bypasses UE5 global downward gravity |
 | **Gravitational Scale ($G$)** | `980.0` | Gameplay-aligned scale factor (cm/s²) |
